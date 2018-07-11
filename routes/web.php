@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'HomeController@index')->name('home');
+Route::post('/', 'InquiryController@store')->name('inquiries.store');

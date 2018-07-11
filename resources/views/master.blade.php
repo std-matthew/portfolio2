@@ -9,10 +9,13 @@
         <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
         <meta property="og:image" content="/images/logo.png">
         <meta property="og:title" content="{{ config('app.name') }}">
-        <meta property="og:description" content="">
+        <meta property="og:description" 
+        	content="No state. No boundaries. Achive anything by being in between. No form. No end. Infinite Possibilities.">
         <meta property="og:url" content="{{ url('/') }}">
         <meta property="og:site_name" content="{{ config('app.name') }}">
         <meta property="og:type" content="website">
+
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
@@ -32,6 +35,10 @@
 			<script src="/js/breakpoints.min.js"></script>
 			<script src="/js/util.js"></script>
 			<script src="/js/main.js"></script>
+			
+			<script src="{{ mix('/js/manifest.js') }}"></script>
+	        <script src="{{ mix('/js/vendor.js') }}"></script>
+	        <script src="{{ mix('/js/app.js') }}"></script>
 
 	</body>
 </html>

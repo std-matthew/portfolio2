@@ -161,46 +161,27 @@
 				<h2>Get it touch</h2>
 				<p>Tell me more about how I can help you</p>
 			</header>
-			<div class="row">
+			<div id="app" class="row">
 				<div class="col-8 col-12-xsmall a-margin-lr">
-					<form method="post" action="#">
-						<div class="row gtr-uniform gtr-50">
-							<div class="col-6 col-12-xsmall">
-								<input type="text" name="name" id="name" value="" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-xsmall">
-								<input type="email" name="email" id="email" value="" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-							</div>
-							<div class="col-12 pull-right right">
-								<ul class="actions">
-									<li class="a-margin-l">
-										<button type="submit" class="button primary">
-											<i class="fa fa-paper-plane"></i>
-											Send Message
-										</button>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</form>
+					<std-form
+						:submiturl="'{{ route('inquiries.store') }}'"
+					></std-form>
 				</div>
 			</div>
-
 		</div>
 	</section>
 
 	<!-- Footer -->
 	<footer id="footer">
 		<ul class="icons">
-			<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-			<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-			<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+			<li><a href="https://www.linkedin.com/in/matthew-molina-4a1a7b13b" target="_blank" 
+				class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://github.com/std-matthew" class="icon alt fa-github" 
+				target="_blank"><span class="label">GitHub</span></a></li>
+			<li><a href="mailto:no.reply.stateless.std@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 		</ul>
 		<ul class="copyright">
-			<li>&copy; Stateless. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			<li>&copy; Stateless. All rights reserved {{ \Carbon\Carbon::now()->year }}.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 		</ul>
 	</footer>
 
