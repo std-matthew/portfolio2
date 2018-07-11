@@ -8,7 +8,12 @@
 		<h1 id="logo"><a href="{{ route('home') }}">Stateless</a></h1>
 		<nav id="nav">
 			<ul>
-				<li><a href="#" class="button primary">Read Me</a></li>
+				<li>
+					<a href="https://drive.google.com/open?id=1n518_27rLPlBch6Ml_kfeTgU0zGE7n6j" 
+						class="button primary" target="_blank">
+						Read Me
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</header>

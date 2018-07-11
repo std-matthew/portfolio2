@@ -1,16 +1,21 @@
 <!DOCTYPE HTML>
-<!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>{{ config('app.title') }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+
+		<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+        <meta property="og:image" content="/images/logo.png">
+        <meta property="og:title" content="{{ config('app.name') }}">
+        <meta property="og:description" content="">
+        <meta property="og:url" content="{{ url('/') }}">
+        <meta property="og:site_name" content="{{ config('app.name') }}">
+        <meta property="og:type" content="website">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 		<link rel="stylesheet" href="/css/main.css" />
 		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
 	</head>
