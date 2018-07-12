@@ -46,9 +46,8 @@ class InquiryController extends Controller
         DB::beginTransaction();
 
             $inquiry = Inquiry::findOrCreate($vars['email']);
-            
-            InquiryItem::create([
-                'inquiry_id' => $inquiry->id,
+
+            $inquiry->inquiry_items()->create([
                 'name' => $vars['name'],
                 'message' => $vars['message'],
             ]);
